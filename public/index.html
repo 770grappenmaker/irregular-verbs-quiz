@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Irregular verbs quiz!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="/quiz.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/disco.js"></script>
+</head>
+
+<body onload="disco()">
+    <h1>Irregular Verbs quiz!</h1>
+    <p id="welcome-text">Welcome at the Irregular Verbs quiz! This quiz is about learning the irregular verbs. <br>Click
+        the button down below to get started!</p>
+
+    <div class="form-group">
+        <label for="maxQuestions">Questions amount</label>
+        <input type="number" class="form-control" id="maxQuestions" value="20">
+    </div>
+    <button id="start-btn" class="btn btn-primary">(Re)start the quiz!</button>
+
+    <form style="display: none;" id="quiz-form" action="#">
+        <p>Fill in the translation with to and the 3 forms of the Dutch verb below: (seperated by spaces)</p>
+        <p id="currentVerb"></p>
+        <div class="form-group">
+            <label for="quizAnswer">Your answer</label>
+            <input type="text" class="form-control" id="quizAnswer">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <img style="width: 32px;" id="image-placeholder">
+        <p id="points">0/20</p>
+    </form>
+</body>
+
+</html>
