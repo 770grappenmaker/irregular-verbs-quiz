@@ -17,31 +17,43 @@
         crossorigin="anonymous"></script>
     <script src="/quiz.js"></script>
     <link rel="stylesheet" href="/style.css">
-    <script src="/disco.js"></script>
+    <!-- <script src="/disco.js"></script> -->
 </head>
 
-<body onload="disco()">
-    <h1>Irregular Verbs quiz!</h1>
+<body>
+    <!-- <h1>Irregular Verbs quiz!</h1>
     <p id="welcome-text">Welcome at the Irregular Verbs quiz! This quiz is about learning the irregular verbs. <br>Click
-        the button down below to get started!</p>
-
-    <div class="form-group">
-        <label for="maxQuestions">Questions amount</label>
-        <input type="number" class="form-control" id="maxQuestions" value="20">
-    </div>
-    <button id="start-btn" class="btn btn-primary">(Re)start the quiz!</button>
-
-    <form style="display: none;" id="quiz-form" action="#">
-        <p>Fill in the translation with to and the 3 forms of the Dutch verb below: (seperated by spaces)</p>
-        <p id="currentVerb"></p>
-        <div class="form-group">
-            <label for="quizAnswer">Your answer</label>
-            <input type="text" class="form-control" id="quizAnswer">
+        the button down below to get started!</p> -->
+    <div class="jumbotron">
+        <h1 class="display-4">Irregular Verbs quiz</h1>
+        <div class="lead">
+            Welcome to the Irregular Verbs quiz! This quiz is about learning the irregular verbs.<br>
+            Click the button down below to get started!
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <img style="width: 32px;" id="image-placeholder">
-        <p id="points">0/20</p>
-    </form>
+    </div>
+    <div class="content">
+        <div class="form-group">
+            <label for="maxQuestions">Questions amount</label>
+            <input type="number" class="form-control" id="maxQuestions" value="20">
+        </div>
+        <button id="start-btn" class="btn btn-primary">(Re)start the quiz!</button>
+
+        <form style="display: none;" id="quiz-form" action="#">
+            <div class="divider"></div>
+            <p>Fill in the translation with to and the 3 forms of the Dutch verb below: (seperated by spaces)</p>
+            <p id="currentVerb"></p>
+            <div class="form-group">
+                <label for="quizAnswer">Your answer</label>
+                <input type="text" class="form-control" id="quizAnswer">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <img style="width: 32px;" id="image-placeholder">
+            <p id="points">0/20</p>
+        </form>
+    </div>
+    <div class="fixedBottom jumbotron">
+        <p>If you want, you can visit a list of all verbs included in this quiz <a href="/verbsList">here</a></p>
+    </div>
 </body>
 
 </html>

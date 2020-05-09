@@ -3,6 +3,7 @@ let verbs = null;
 let points = 0;
 let tookQuestions = 0;
 let maxQuestions = 20;
+let started = false;
 $(document).ready(() => {
     $.ajax({
         url: "/verbs",
@@ -23,6 +24,12 @@ $(document).ready(() => {
         form.style.display = "block";
         points = 0;
         tookQuestions = 0;
+        started = true;
+
+        let q = document.getElementById("maxQuestions");
+        let val = parseInt(q.value);
+        if (val == parseInt(new Number(q.value)) && val != 0) maxQuestions = val;
+        
         newVerb();
     })
     form.addEventListener("submit", (e) => {
@@ -41,6 +48,7 @@ $(document).ready(() => {
 
     let q = document.getElementById("maxQuestions");
     q.addEventListener("change", () => {
+        if (started) return;
         let val = parseInt(q.value);
         if (val != parseInt(new Number(q.value))) return;
         if (val == 0) return;
@@ -51,6 +59,7 @@ function newVerb() {
     if (tookQuestions == maxQuestions) {
         document.getElementById("quiz-form").style.display = "none"
         document.getElementById("image-placeholder").removeAttribute("src");
+        started = false;
         return alert(`Well done! Click the button to start over. Your score was ${points} out of ${maxQuestions} questions`)
     }
     currentVerb = Math.floor(Math.random() * verbs.length);

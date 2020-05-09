@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Irregular Verbs in the quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body style="margin: 8px;">
+    <h5>Currently, the quiz includes the following verbs:</h5>
+    <script>
+        $.ajax({
+            url: "/verbs",
+            success: function (result) {
+                let verbs = "";
+                result.forEach(verb => {
+                    let forms = verb.engels.split(" ");
+                    verbs += `<tr><td>${verb.nederlands}</td><td>${forms[0] + " " + forms[1]}</td><td>${forms[2]}</td><td>${forms[3]}</td></tr>`
+                })
+
+                let el = document.createElement("table");
+                el.innerHTML = verbs;
+                el.style.width = "50%"
+                document.body.appendChild(el);
+            },
+            statusCode: {
+                404: (res) => {
+                    let el = document.createElement("p");
+                    el.innerText = "The server returned a status code of 404, so the verbs couldn't be loaded. :(";
+                    document.body.appendChild(el);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
