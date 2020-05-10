@@ -1,1 +1,314 @@
-[{"engels":"to awake awoke awoken","nederlands":"wakker worden"},{"engels":"to be was/were been","nederlands":"zijn"},{"engels":"to beat beat beaten","nederlands":"slaan"},{"engels":"to become became become","nederlands":"worden"},{"engels":"to begin began begun","nederlands":"beginnen"},{"engels":"to bet bet bet","nederlands":"wedden"},{"engels":"to bend bent bent","nederlands":"buigen"},{"engels":"to bind bound bound","nederlands":"binden"},{"engels":"to bite bit bitten","nederlands":"bijten"},{"engels":"to bleed bled bled","nederlands":"bloeden"},{"engels":"to blow blew blown","nederlands":"blazen"},{"engels":"to break broke broken","nederlands":"breken"},{"engels":"to breed bred bred","nederlands":"kweken"},{"engels":"to bring brought brought","nederlands":"brengen"},{"engels":"to broadcast broadcast broadcast","nederlands":"uitzenden"},{"engels":"to build built built","nederlands":"bouwen"},{"engels":"to burn burnt burnt","nederlands":"(ver)branden"},{"engels":"to burst burst burst","nederlands":"barsten"},{"engels":"to buy bought bought","nederlands":"kopen"},{"engels":"to catch caught caught","nederlands":"vangen"},{"engels":"to choose chose chosen","nederlands":"kiezen"},{"engels":"to come came come","nederlands":"komen"},{"engels":"to cost cost cost","nederlands":"kosten"},{"engels":"to creep crept crept","nederlands":"kruipen"},{"engels":"to cut cut cut","nederlands":"snijden"},{"engels":"to deal dealt dealt","nederlands":"(be)handelen"},{"engels":"to dig dug dug","nederlands":"graven"},{"engels":"to do did done","nederlands":"doen"},{"engels":"to draw drew drawn","nederlands":"tekenen"},{"engels":"to dream dreamt dreamt","nederlands":"dromen"},{"engels":"to drink drank drunk","nederlands":"drinken"},{"engels":"to drive drove driven","nederlands":"besturen"},{"engels":"to eat ate eaten","nederlands":"eten"},{"engels":"to fall fell fallen","nederlands":"vallen"},{"engels":"to feed fed fed","nederlands":"voeden"},{"engels":"to feel felt felt","nederlands":"voelen"},{"engels":"to fight fought fought","nederlands":"vechten"},{"engels":"to find found found","nederlands":"vinden"},{"engels":"to flee fled fled","nederlands":"vluchten"},{"engels":"to fling flung flung","nederlands":"smijten"},{"engels":"to fly flew flown","nederlands":"vliegen"},{"engels":"to forbid forbade forbidden","nederlands":"verbieden"},{"engels":"to forget forgot forgotten","nederlands":"vergeten"},{"engels":"to forgive forgave forgiven","nederlands":"vergeven"},{"engels":"to freeze froze frozen","nederlands":"(be)vriezen"},{"engels":"to get got got","nederlands":"krijgen"},{"engels":"to give gave given","nederlands":"geven"},{"engels":"to go went gone","nederlands":"gaan"},{"engels":"to grow grew grown","nederlands":"groeien"},{"engels":"to hang hung hung","nederlands":"(op)hangen"},{"engels":"to have had had","nederlands":"hebben"},{"engels":"to hear heard heard","nederlands":"horen"},{"engels":"to hide hid hidden","nederlands":"verbergen"},{"engels":"to hit hit hit","nederlands":"treffen/slaan"},{"engels":"to hold held held","nederlands":"(vast)houden"},{"engels":"to hurt hurt hurt","nederlands":"pijn doen"},{"engels":"to keep kept kept","nederlands":"houden"},{"engels":"to kneel knelt knelt","nederlands":"knielen"},{"engels":"to knit knit knit","nederlands":"breien"},{"engels":"to knew knew known","nederlands":"kennen"},{"engels":"to lay laid laid","nederlands":"leggen"},{"engels":"to lead led led","nederlands":"leiden"},{"engels":"to lean leant leant","nederlands":"leunen"},{"engels":"to lean learnt learnt","nederlands":"leren"},{"engels":"to leave left left","nederlands":"(ver)laten"},{"engels":"to lend lent lent","nederlands":"(uit)lenen"},{"engels":"to let let let","nederlands":"laten/verhuren"},{"engels":"to lie lay lain","nederlands":"liggen"},{"engels":"to light lit lit","nederlands":"(aan)steken"},{"engels":"to lose lost lost","nederlands":"verliezen"},{"engels":"to make made made","nederlands":"maken"},{"engels":"to mean meant meant","nederlands":"bedoelen"},{"engels":"to meet met met","nederlands":"ontmoeten"},{"engels":"to pay paid paid","nederlands":"betalen"},{"engels":"to put put put","nederlands":"zetten/leggen"},{"engels":"to read read read","nederlands":"lezen"},{"engels":"to ride rode ridden","nederlands":"rijden"},{"engels":"to ring rang rung","nederlands":"bellen/telefoneren"}]
+[
+    {
+        "engels": "to awake awoke awoken",
+        "nederlands": "wakker worden"
+    },
+    {
+        "engels": "to be was/were been",
+        "nederlands": "zijn"
+    },
+    {
+        "engels": "to beat beat beaten",
+        "nederlands": "slaan"
+    },
+    {
+        "engels": "to become became become",
+        "nederlands": "worden"
+    },
+    {
+        "engels": "to begin began begun",
+        "nederlands": "beginnen"
+    },
+    {
+        "engels": "to bet bet bet",
+        "nederlands": "wedden"
+    },
+    {
+        "engels": "to bend bent bent",
+        "nederlands": "buigen"
+    },
+    {
+        "engels": "to bind bound bound",
+        "nederlands": "binden"
+    },
+    {
+        "engels": "to bite bit bitten",
+        "nederlands": "bijten"
+    },
+    {
+        "engels": "to bleed bled bled",
+        "nederlands": "bloeden"
+    },
+    {
+        "engels": "to blow blew blown",
+        "nederlands": "blazen"
+    },
+    {
+        "engels": "to break broke broken",
+        "nederlands": "breken"
+    },
+    {
+        "engels": "to breed bred bred",
+        "nederlands": "kweken"
+    },
+    {
+        "engels": "to bring brought brought",
+        "nederlands": "brengen"
+    },
+    {
+        "engels": "to broadcast broadcast broadcast",
+        "nederlands": "uitzenden"
+    },
+    {
+        "engels": "to build built built",
+        "nederlands": "bouwen"
+    },
+    {
+        "engels": "to burn burnt burnt",
+        "nederlands": "(ver)branden"
+    },
+    {
+        "engels": "to burst burst burst",
+        "nederlands": "barsten"
+    },
+    {
+        "engels": "to buy bought bought",
+        "nederlands": "kopen"
+    },
+    {
+        "engels": "to catch caught caught",
+        "nederlands": "vangen"
+    },
+    {
+        "engels": "to choose chose chosen",
+        "nederlands": "kiezen"
+    },
+    {
+        "engels": "to come came come",
+        "nederlands": "komen"
+    },
+    {
+        "engels": "to cost cost cost",
+        "nederlands": "kosten"
+    },
+    {
+        "engels": "to creep crept crept",
+        "nederlands": "kruipen"
+    },
+    {
+        "engels": "to cut cut cut",
+        "nederlands": "snijden"
+    },
+    {
+        "engels": "to deal dealt dealt",
+        "nederlands": "(be)handelen"
+    },
+    {
+        "engels": "to dig dug dug",
+        "nederlands": "graven"
+    },
+    {
+        "engels": "to do did done",
+        "nederlands": "doen"
+    },
+    {
+        "engels": "to draw drew drawn",
+        "nederlands": "tekenen"
+    },
+    {
+        "engels": "to dream dreamt dreamt",
+        "nederlands": "dromen"
+    },
+    {
+        "engels": "to drink drank drunk",
+        "nederlands": "drinken"
+    },
+    {
+        "engels": "to drive drove driven",
+        "nederlands": "besturen"
+    },
+    {
+        "engels": "to eat ate eaten",
+        "nederlands": "eten"
+    },
+    {
+        "engels": "to fall fell fallen",
+        "nederlands": "vallen"
+    },
+    {
+        "engels": "to feed fed fed",
+        "nederlands": "voeden"
+    },
+    {
+        "engels": "to feel felt felt",
+        "nederlands": "voelen"
+    },
+    {
+        "engels": "to fight fought fought",
+        "nederlands": "vechten"
+    },
+    {
+        "engels": "to find found found",
+        "nederlands": "vinden"
+    },
+    {
+        "engels": "to flee fled fled",
+        "nederlands": "vluchten"
+    },
+    {
+        "engels": "to fling flung flung",
+        "nederlands": "smijten"
+    },
+    {
+        "engels": "to fly flew flown",
+        "nederlands": "vliegen"
+    },
+    {
+        "engels": "to forbid forbade forbidden",
+        "nederlands": "verbieden"
+    },
+    {
+        "engels": "to forget forgot forgotten",
+        "nederlands": "vergeten"
+    },
+    {
+        "engels": "to forgive forgave forgiven",
+        "nederlands": "vergeven"
+    },
+    {
+        "engels": "to freeze froze frozen",
+        "nederlands": "(be)vriezen"
+    },
+    {
+        "engels": "to get got got",
+        "nederlands": "krijgen"
+    },
+    {
+        "engels": "to give gave given",
+        "nederlands": "geven"
+    },
+    {
+        "engels": "to go went gone",
+        "nederlands": "gaan"
+    },
+    {
+        "engels": "to grow grew grown",
+        "nederlands": "groeien"
+    },
+    {
+        "engels": "to hang hung hung",
+        "nederlands": "(op)hangen"
+    },
+    {
+        "engels": "to have had had",
+        "nederlands": "hebben"
+    },
+    {
+        "engels": "to hear heard heard",
+        "nederlands": "horen"
+    },
+    {
+        "engels": "to hide hid hidden",
+        "nederlands": "verbergen"
+    },
+    {
+        "engels": "to hit hit hit",
+        "nederlands": "treffen/slaan"
+    },
+    {
+        "engels": "to hold held held",
+        "nederlands": "(vast)houden"
+    },
+    {
+        "engels": "to hurt hurt hurt",
+        "nederlands": "pijn doen"
+    },
+    {
+        "engels": "to keep kept kept",
+        "nederlands": "houden"
+    },
+    {
+        "engels": "to kneel knelt knelt",
+        "nederlands": "knielen"
+    },
+    {
+        "engels": "to knit knit knit",
+        "nederlands": "breien"
+    },
+    {
+        "engels": "to knew knew known",
+        "nederlands": "kennen"
+    },
+    {
+        "engels": "to lay laid laid",
+        "nederlands": "leggen"
+    },
+    {
+        "engels": "to lead led led",
+        "nederlands": "leiden"
+    },
+    {
+        "engels": "to lean leant leant",
+        "nederlands": "leunen"
+    },
+    {
+        "engels": "to learn learnt learnt",
+        "nederlands": "leren"
+    },
+    {
+        "engels": "to leave left left",
+        "nederlands": "(ver)laten"
+    },
+    {
+        "engels": "to lend lent lent",
+        "nederlands": "(uit)lenen"
+    },
+    {
+        "engels": "to let let let",
+        "nederlands": "laten/verhuren"
+    },
+    {
+        "engels": "to lie lay lain",
+        "nederlands": "liggen"
+    },
+    {
+        "engels": "to light lit lit",
+        "nederlands": "(aan)steken"
+    },
+    {
+        "engels": "to lose lost lost",
+        "nederlands": "verliezen"
+    },
+    {
+        "engels": "to make made made",
+        "nederlands": "maken"
+    },
+    {
+        "engels": "to mean meant meant",
+        "nederlands": "bedoelen"
+    },
+    {
+        "engels": "to meet met met",
+        "nederlands": "ontmoeten"
+    },
+    {
+        "engels": "to pay paid paid",
+        "nederlands": "betalen"
+    },
+    {
+        "engels": "to put put put",
+        "nederlands": "zetten/leggen"
+    },
+    {
+        "engels": "to read read read",
+        "nederlands": "lezen"
+    },
+    {
+        "engels": "to ride rode ridden",
+        "nederlands": "rijden"
+    },
+    {
+        "engels": "to ring rang rung",
+        "nederlands": "bellen/telefoneren"
+    }
+]

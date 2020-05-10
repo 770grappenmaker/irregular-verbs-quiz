@@ -35,3 +35,4 @@ app.use(function (req, res, next) {
 
 app.listen(port);
 console.log(`Server now listening on port ${port}!`)
+console.log(`Open your browser on http://127.0.0.1:${port}`)
