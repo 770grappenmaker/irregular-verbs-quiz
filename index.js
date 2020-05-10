@@ -9,8 +9,8 @@ app.use(express.static(path.join(__dirname, "/public"), {
     extensions: ["html"]
 }))
 app.get("/verbs", (req, res) => {
-    if (!fs.existsSync("./verbs.json")) return res.status(404).send("Database was not found")
-    let verbs = require("./verbs.json");
+    if (!fs.existsSync("./verbs2.json")) return res.status(404).send("Database was not found")
+    let verbs = require("./verbs2.json");
     if (verbs != null) res.status(200).send(verbs);
 })
 
