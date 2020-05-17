@@ -1,3 +1,4 @@
+const fs = require("fs");
 const https = require('https');
 const privateKey  = fs.readFileSync('private.pem', 'utf8');
 const certificate = fs.readFileSync('client.pem', 'utf8');
@@ -5,7 +6,6 @@ const certificate = fs.readFileSync('client.pem', 'utf8');
 let credentials = {key: privateKey, cert: certificate};
 
 const express = require("express");
-const fs = require("fs");
 const path = require("path")
 const port = process.argv.slice(2)[0] || 3000;
 
