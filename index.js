@@ -1,3 +1,9 @@
+const https = require('https');
+const privateKey  = fs.readFileSync('private.pem', 'utf8');
+const certificate = fs.readFileSync('client.pem', 'utf8');
+
+let credentials = {key: privateKey, cert: certificate};
+
 const express = require("express");
 const fs = require("fs");
 const path = require("path")
@@ -33,6 +39,9 @@ app.use(function (req, res, next) {
     res.type('txt').send('404 Not found');
 });
 
-app.listen(port);
+// app.listen(port);
+const httpsServer = https.createServer(credentials, app);
+
+httpsServer.listen(port);
 console.log(`Server now listening on port ${port}!`)
 console.log(`Open your browser on http://127.0.0.1:${port}`)
