@@ -1,3 +1,5 @@
 node_modules/
 format.txt
 overhoor_bestanden/*
+client.pem
+private.pem
