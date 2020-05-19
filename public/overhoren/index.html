@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overhoormodus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Overhoormodus</h1>
+        <p class="lead">Dit is het Nederlandse deel van deze website: hier kun je terecht om je quizlet lijsten te importeren, om ze vervolgens te laten overhoren.</p>
+        <hr class="my-4">
+        <p>Kopieer een Quizlet lijst in onderstaande vak om door te gaan. Je krijgt dan een permanente link die je kunt gebruiken om hem later te gebruiken.</p>
+    </div>
+    <div class="content">
+        <form action="/overhoren" method="post">
+            <textarea name="overhoordata" id="overhoordata" cols="30" rows="10"></textarea>
+            <input type="submit" value="Verstuur">
+        </form>
+    </div>
+</body>
+</html>
