@@ -17,8 +17,8 @@ app.use(express.static(path.join(__dirname, "/public"), {
     extensions: ["html"]
 }))
 app.get("/verbs", (req, res) => {
-    if (!fs.existsSync("./verbs2.json")) return res.status(404).send("Database was not found")
-    let verbs = require("./verbs2.json");
+    if (!fs.existsSync("./verbs3.json")) return res.status(404).send("Database was not found")
+    let verbs = require("./verbs3.json");
     if (verbs != null) res.status(200).send(verbs);
 })
 app.post("/feedback", (req, res) => {
@@ -54,7 +54,7 @@ app.use(function (req, res, next) {
 });
 
 // app.listen(port);
-const httpSevrer = http.createServer(app)
+const httpServer = http.createServer(app)
 const httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(port)
